@@ -1,0 +1,128 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+.el-scrollbar__wrap {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.avatar-uploader{
+  display: inline-block;
+  .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+  }
+  .avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+  }
+} 
+.el-form--label-top .el-form-item__label{
+  width: 100%;
+  text-align: center;
+}
+.borderContent{
+  padding: 10px;
+}
+.el-rate__icon{
+  font-size: 30px;
+}
+.borderItem{
+  background-color: #ffffff;
+  margin: 10px auto;
+  border-radius:5px;
+  padding:20px;
+  .item-title{
+      line-height: 30px;
+      display: flex;
+      justify-content: space-between;
+      color: cornflowerblue;
+      font-size: 14px;
+      .name{
+          font-weight: bold;
+          color: rgb(7, 24, 48);
+          font-size: 18px;
+          cursor: Default;
+      }
+      span:nth-child(2){
+          cursor: pointer;
+      }
+  }
+}
